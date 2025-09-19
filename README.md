@@ -6,7 +6,9 @@ Web service que provê servidores virtuais (instâncias) escaláveis na nuvem pa
 
 Casos de uso: host de sites, APIs, host de jogos multiplayer.
 
-Possibilita customização de sistema operacional, CPU, memória, disco e rede.
+Possibilita customização de sistema operacional, CPU, memória, disco e rede. Importante entender qual a necessidade de utilização para escolher o EC2 adequado a fim de melhor gerir os gastos.
+
+![EC2 - Tipos](Imagens/Tipos_EC2.png)
 
 **AMI (Amazon Machine Image):** feature que permite a criação de imagem de uma instância EC2 a  fim de replicá-la (+EBS).
 
@@ -24,7 +26,11 @@ Utilizado para armazenar, organizar e recuperar grandes volumes de dados dentro 
 
 Possui diferentes opções de armazenamento de acordo com a frequência de utilização das informações armazenadas. Por exemplo, dados acessados com frequência inferior a 90 dias podem ser salvos no S3 Standard enquanto dados a mais de um ano sem acesso podem ser armazenados no S3 Glacier.
 
+![S3 - Frequência de Uso](Imagens/Frequencia_S3.png)
+
 # Exemplo de aplicação utilizando EC2, EBS e S3
 Um usuário necessita enviar via interface web um arquivo em formato .word para ser salvo no S3 em formato PDF.
+
+![Diagrama](Imagens/Diagrama.png)
 
 
